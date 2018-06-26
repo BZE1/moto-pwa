@@ -1,0 +1,35 @@
+
+
+Intro to Web Scraping with Python and Beautiful Soup
+https://www.youtube.com/watch?v=XQgXKtPSzUI&t=993s
+jsbeauityifer
+
+ng serve
+localhost:4200
+http://localhost:4200/
+
+------------------------------------
+ng build --prod
+
+------------------------------------
+SW Working only in prod
+npm run start:prod
+http://localhost:3000/
+
+
+Git crap
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
