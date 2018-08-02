@@ -8,6 +8,13 @@ body {
 	/*padding-left: 10px;*/
 }
 
+.zx-nav {
+    text-align: center;
+}
+
+#zx-logo-youtube {
+    align-content: center;
+}
 
 #zx_Header_color {
     color: white;
@@ -42,10 +49,10 @@ button:hover{
 }
 
 #ex_1{
-  background-color: white; 
+  background-color: #bff442; 
 }
 #ex_2{
-  background-color: white ;
+  background-color: #f48942 ;
   color:red;
 }
 #ex_3{
@@ -60,7 +67,7 @@ button:hover{
   color:yellow;   
 }
 #ex_6{
-  background-color: white;  
+  background-color: #42d7f4;  
 }
 
 /*[  Desktop  ]*/
@@ -160,3 +167,4 @@ button:hover{
     position: relative;  
     top: 2px;  
 }  
+

@@ -1,0 +1,157 @@
+
+<!--########################################################-->
+<!--#############[         Nav Bar            ]############-->
+<!--########################################################-->
+<div class="zx-nav"  style="text-align:center">
+<nav class="navbar navbar-brand navbar-dark fixed-top zx-color">
+
+   
+        <h4 id="zx_Header_color">Motivation App</h4>
+
+</nav>
+</div>
+
+
+<div style="text-align:center">
+  <!-- <h1>      {{ title }}    </h1> -->
+
+
+  
+  <img 		src="https://img.labnol.org/di/chrome-offline-dinosaur.gif"
+  			width="300" 
+  			height="130" 
+  			alt="Giffy Logo" >
+</div>
+
+<div class="container-fluid">
+
+		<h1>Register</h1>
+
+		<div    class="alert alert-danger" 
+				*ngIf="usernameError">
+				This username already in use, Try another one.		
+				</div>
+
+		<div    class="alert alert-danger" 
+				*ngIf="passwordError">
+				Password ERROR both passwords dont match !		
+				</div>
+
+<!--########################################################-->
+<!--#############[            FORM             ]############-->
+<!--########################################################-->
+
+<!-- <form (ngSubmit)="register()" #f="ngForm"> -->
+<form>
+
+	<div class="form-group">
+
+				<input  class="form-control" 
+						type="text" 
+						name="username" 
+						placeholder="Username">
+
+				<!-- <input  class="form-control" 
+						type="text" 
+						name="username" 
+						required 
+						ngModel 
+						#username="ngModel" 
+						placeholder="Username"> -->
+	</div>
+
+	<!-- <span 	class="alert" 
+			*ngIf="username.invalid && username.touched">
+			Please enter a username !
+			</span> -->
+
+	<div class="form-group">
+
+			<input  class="form-control" 
+					type="password" 
+					name="password" 
+					placeholder="Password">
+
+			<!-- <input  class="form-control" 
+					type="password" 
+					name="password" 
+					required  
+					ngModel 
+					#password="ngModel" 
+					placeholder="Password"> -->
+	</div>
+
+	<!-- <span   class="alert" 
+			*ngIf="password.invalid && password.touched">
+			Please Enter a Password here!
+			</span> -->
+
+	<div class="form-group">
+
+		<input  class="form-control" 
+				type="password" 
+				name="verifyPassword" 
+				placeholder="Verify Password">
+
+	<!-- <div class="form-group">
+
+			<input  class="form-control" 
+					type="password" 
+					name="password" 
+					required  
+					ngModel 
+					#password="ngModel" 
+					placeholder="Password">
+	</div>
+
+	<span   class="alert" 
+			*ngIf="password.invalid && password.touched">
+			Please Enter a Password here!
+			</span>
+
+	<div class="form-group">
+
+		<input  class="form-control" 
+				type="password" 
+				name="verifyPassword" 
+				required 
+				ngModel 
+				#verifyPassword="ngModel" 
+				placeholder="Verify Password"> -->
+				
+	</div>
+
+	<!-- <span   class="alert" 
+			*ngIf="verifyPassword.invalid && verifyPassword.touched">
+			Please Enter a password to Verify the password !
+			</span> -->
+
+
+
+	<button     class="btn btn-primary" 
+				type="submit"
+				routerLink="/login">
+				Register
+				</button>
+
+	<button     class="btn btn-danger" 
+				routerLink="/">
+				Cancel
+				</button>
+
+	<!-- 
+	<button     class="btn btn-primary btn-block" 
+				type="submit" 
+				[disabled]="f.invalid">
+				Register
+				</button>
+
+	<button     class="btn btn-danger btn-block" 
+				routerLink="/login">
+				Cancel
+				</button> -->
+				
+</form>
+
+
+</div> <!-- contaianer end -->

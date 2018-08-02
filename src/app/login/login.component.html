@@ -1,0 +1,72 @@
+	<!--########################################################-->
+		<!--#############[         LOGIN AND FLAG      ]############-->
+		<!--########################################################-->
+
+<div class="container-fluid">
+
+	<h1>Login</h1>
+
+	<div    *ngIf="errorFlag" 
+		 	class="alert alert-danger">
+			You entered an Invalid username or password
+			</div>
+
+		<!--########################################################-->
+		<!--#############[           FORM              ]############-->
+		<!--########################################################-->
+
+	<form (ngSubmit)="login()" #f="ngForm">
+
+		<div  class="form-group">
+			<input  class="form-control" 
+					type="text" 
+				  	name="username" 
+				  	placeholder="Username" 
+				  	required
+				  	ngModel
+				  	#username="ngModel">
+		</div>
+
+		<span   class="alert" 
+				*ngIf="username.invalid && username.touched">
+				Please enter username!
+				</span>
+
+		<div class="form-group">
+			<input  class="form-control" 
+					required 				
+					type="password" 
+					name="password" 
+					placeholder="Password" 
+					ngModel
+					#password="ngModel">
+					<!-- autocomplete="off"  -->
+		</div>
+
+		<span   class="alert" 
+				*ngIf="password.invalid && password.touched">
+				Please enter password!
+				</span>
+
+
+								<!-- btn-block -->
+		<button class="btn btn-primary" 
+				[disabled]="f.invalid" 
+				type="submit">
+				Login
+				</button>
+
+		<button class="btn btn-success" 
+				routerLink="/register">
+				Register
+				</button>
+
+		<button class="btn btn-danger" 
+				routerLink="/">
+				Cancel
+				</button>
+
+	</form> <!-- [END OF FORM] -->
+
+</div>  <!-- [END OF CONTAINER] -->
+<div class="loader"></div>
