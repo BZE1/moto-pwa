@@ -1,25 +1,20 @@
 
-<div id="top-page"></div>
+<!-- <div id="top-splash-page"></div> -->
 <!--########################################################-->
 <!--#############[         Nav Bar            ]############-->
 <!--########################################################-->
 <div class="zx-nav"  style="text-align:center">
+
 <nav class="navbar navbar-brand navbar-dark fixed-top zx-color">
 
    
         <h4 id="zx_Header_color">Motivation App</h4>
    
 
-
 </nav>
 
 </div>
 
-<!-- <img class="sw-button-to-a sw-color-black float-right" height="50" width="50" src="http://mariafresa.net/newimages/button-clipart-animated-12.gif" alt=""> -->
-
-<!-- <img class="sw-button-to-a sw-color-black float-left" height="30" width="30" src="http://mariafresa.net/newimages/button-clipart-animated-12.gif" alt=""> -->
-
-<!-- <img class="btn sw-button-to-a sw-color-black float-right" height="50" width="50" src="http://mariafresa.net/newimages/button-clipart-animated-12.gif" alt=""> -->
 
 
 <br>
@@ -64,27 +59,7 @@
 <!--#############[          Testing            ]############-->
 <!--########################################################-->
 <div id="zx-logo-youtube">
-    <!-- <h1>test</h1> -->
-     <!-- <img [src]="'../assets/button-animated.gif'" alt="">    -->
-    <!-- <img src="../assets/button-clipart-animated-12.gif" alt="">  -->
-    <!-- <img  src="assets/Test_Image.jpg" alt=""> --> 
-    <!-- button-clipart-animated-12 -->
 
-   <!--  <img height="50" width="50" src="" alt=""> -->
-
-
-
-    <!-- http://mariafresa.net/newimages/button-clipart-animated-12.gif -->
-<!-- 
-       
-       <button   class=""
-                 routerLink="/">
-                 <img src="/../assets/images/button-animated.gif" alt="">
-                 Home
-                </button> -->
-          
-
-<!-- https://homekitnews.com/wp-content/uploads/2018/03/youtube.gif -->
 
 </div>
 
@@ -206,7 +181,127 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<div id="test">
+    <!-- <input type="" name=""> -->
+    <!-- <input type="text" ngModel="{{inputString}}"> -->
+
+    <button class="btn btn-danger"
+            (click)="clickEvent()"
+            type="button">
+            SEARCH
+            </button>
+
+</div>
+
+<form (ngSubmit)="clickEvent()" #f="ngForm">
+
+    <div class="form-group">
+
+            <input  class="form-control" 
+                type="text" 
+                name="inputString" 
+                required 
+                ngModel 
+                #inputString="ngModel" 
+                placeholder="Input something">
+      </div>
+
+</form>
+
+
+    <br>
+    <h1>{{output}}</h1>
+    <br>
+
+    <br>
+    <h1>{{output1}}</h1> <h1>{{output2}}</h1>
+    <p>{{output3}}</p>
+    <br>
+
+
 <!-- <div id="top-page"></div> -->
+
+
+
+
+
+<br>
+<br>
+<div id="test">
+    <!-- <input type="" name=""> -->
+    <!-- <input type="text" ngModel="{{inputString}}"> -->
+
+    <button class="btn btn-danger"
+            (click)="GetWeather()"
+            type="button">
+            Get Weather
+            </button>
+
+</div>
+
+<form (ngSubmit)="GetWeather()" #b="ngForm">
+
+    <div class="form-group">
+
+            <input  class="form-control" 
+                type="text" 
+                name="inputString2" 
+                required 
+                [(ngModel)] = "inputString2" 
+                placeholder="Whats the weather like">
+      </div>
+
+</form>
+
+
+
+    <br>
+    <h1>{{weather}}</h1>
+    <br>
+
+    <br>
+    <h1>{{weather1}}</h1> <h1>{{weather2}}</h1>
+    <p><b>{{weather3}}</b></p>
+    <br>
+    <h1>{{weather_conditions}}</h1>
+    <br>
+    <br>
+
+   <!--  <div *ngFor = "let them of people" >
+      <p></p>
+ -->
+    <!-- </div> -->
+
+
+
+
+
+
+
+
+
+
 
 
 <div class="zx-center" style="text-align:center">
@@ -228,45 +323,14 @@
                 Register
                 </button>
 
-        <a href="#top-page">
+        <a href="/">
   <button class="btn btn-success" >
             Top of the page
             </button></a>        
   
 </div>
 
-<!-- 
-<div style="text-align:center">
 
-  <h3>{{ title1}}</h3>
-  <img  src="https://raw.githubusercontent.com/Giphy/GiphyAPI/master/api_giphy_header.gif"
-        width="300" 
-        alt="Giffy Logo" >
-
-  <h3>{{ title2}}</h3>
-  <img  src="https://www.crowdspring.com/blog/wp-content/uploads/2016/08/tumblr_mf5ylr5ZkW1r6mnq4o1_1280.gif"
-        width="300" 
-        alt="Giffy Logo" >
-
-  <h3>{{ title3}}</h3>
-  <iframe src="https://www.youtube.com/embed/izIFLbFXuC4"
-          width="360" 
-          height="235"  
-          frameborder="0" 
-          allow="autoplay; encrypted-media" 
-          allowfullscreen>
-          </iframe> -->
-
- <!--  
-<h3>{{ title4}}</h3>
-
-<img width="300" alt="Giffy Logo" src="https://www.google.com">
-
-
-
-<h3>{{ title5}}</h3>
-<img width="300" alt="Giffy Logo" src="https://www.google.com/imgres">
- -->
 
   
 </div>
