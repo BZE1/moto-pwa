@@ -70,8 +70,8 @@ export class SplashPageComponent implements OnInit {
   	weather2 : 		any;
   	weather3 : 		any;
   	inputString2 : 	string;
-   	weatherJSON:		any;
-	crapyWeather: 	string;
+   	weatherJSON:	any;
+	// crapyWeather: 	string;
 	weather_conditions: string;
   	
 

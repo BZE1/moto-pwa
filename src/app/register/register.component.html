@@ -16,12 +16,17 @@
   <!-- <h1>      {{ title }}    </h1> -->
 
 
-  
+<!--    <img 	src="../src/assets/construc-15.gif"
+  			width="300" 
+  			height="130" 
+  			alt="crap" > -->
+
   <img 		src="https://img.labnol.org/di/chrome-offline-dinosaur.gif"
   			width="300" 
   			height="130" 
   			alt="Giffy Logo" >
 </div>
+
 
 <div class="container-fluid">
 
@@ -41,23 +46,23 @@
 <!--#############[            FORM             ]############-->
 <!--########################################################-->
 
-<!-- <form (ngSubmit)="register()" #f="ngForm"> -->
-<form>
+<form (ngSubmit)="register()" #f="ngForm">
+<!-- <form> -->
 
 	<div class="form-group">
 
-				<input  class="form-control" 
+				<!-- <input  class="form-control" 
 						type="text" 
 						name="username" 
-						placeholder="Username">
+						placeholder="Username"> -->
 
-				<!-- <input  class="form-control" 
+				<input  class="form-control" 
 						type="text" 
 						name="username" 
 						required 
 						ngModel 
 						#username="ngModel" 
-						placeholder="Username"> -->
+						placeholder="Username">
 	</div>
 
 	<!-- <span 	class="alert" 
@@ -67,19 +72,42 @@
 
 	<div class="form-group">
 
-			<input  class="form-control" 
+			<!-- <input  class="form-control" 
 					type="password" 
 					name="password" 
-					placeholder="Password">
+					placeholder="Password"> -->
 
-			<!-- <input  class="form-control" 
+			<input  class="form-control" 
 					type="password" 
 					name="password" 
 					required  
 					ngModel 
 					#password="ngModel" 
-					placeholder="Password"> -->
+					placeholder="Password">
 	</div>
+
+	<!-- <span   class="alert" 
+			*ngIf="password.invalid && password.touched">
+			Please Enter a Password here!
+			</span> -->
+
+	<!-- <div class="form-group"> -->
+
+		<!-- <input  class="form-control" 
+				type="password" 
+				name="verifyPassword" 
+				placeholder="Verify Password"> -->
+
+<!-- 	<div class="form-group">
+
+			<input  class="form-control" 
+					type="password" 
+					name="password" 
+					required  
+					ngModel 
+					#password="ngModel" 
+					placeholder="Password">
+	</div> -->
 
 	<!-- <span   class="alert" 
 			*ngIf="password.invalid && password.touched">
@@ -91,33 +119,10 @@
 		<input  class="form-control" 
 				type="password" 
 				name="verifyPassword" 
-				placeholder="Verify Password">
-
-	<!-- <div class="form-group">
-
-			<input  class="form-control" 
-					type="password" 
-					name="password" 
-					required  
-					ngModel 
-					#password="ngModel" 
-					placeholder="Password">
-	</div>
-
-	<span   class="alert" 
-			*ngIf="password.invalid && password.touched">
-			Please Enter a Password here!
-			</span>
-
-	<div class="form-group">
-
-		<input  class="form-control" 
-				type="password" 
-				name="verifyPassword" 
 				required 
 				ngModel 
 				#verifyPassword="ngModel" 
-				placeholder="Verify Password"> -->
+				placeholder="Verify Password">
 				
 	</div>
 
@@ -129,16 +134,30 @@
 
 
 	<button     class="btn btn-primary" 
-				type="submit"
-				routerLink="/login">
-				Register
+				type="submit">
+				[ Submit ]
 				</button>
+				<!-- type="submit" -->
+				<!-- (click)="register()" -->
+			<br>
+				<div>{{ inputHTML }}</div>
+			<br>
 
-	<button     class="btn btn-danger" 
+			<br>
+				<div>{{ outputUnername }}</div>
+				<div>{{ outputPassword }}</div>
+				<div>{{ outputVPassword }}</div>
+			<br>
+
+	<button     class="btn btn-danger onclick" 
 				routerLink="/">
 				Cancel
 				</button>
 
+
+				<!-- <div>
+					<img src="http://www.animatedimages.org/data/media/695/animated-under-construction-image-0035.gif">
+				</div> -->
 	<!-- 
 	<button     class="btn btn-primary btn-block" 
 				type="submit" 

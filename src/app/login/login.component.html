@@ -2,6 +2,7 @@
 		<!--#############[         LOGIN AND FLAG      ]############-->
 		<!--########################################################-->
 
+
 <div class="container-fluid">
 
 	<h1>Login</h1>
@@ -14,7 +15,7 @@
 		<!--########################################################-->
 		<!--#############[           FORM              ]############-->
 		<!--########################################################-->
-
+<!-- loginForm -->
 	<form (ngSubmit)="login()" #f="ngForm">
 
 		<div  class="form-group">
@@ -27,10 +28,10 @@
 				  	#username="ngModel">
 		</div>
 
-		<span   class="alert" 
+<!-- 		<span   class="alert" 
 				*ngIf="username.invalid && username.touched">
 				Please enter username!
-				</span>
+				</span> -->
 
 		<div class="form-group">
 			<input  class="form-control" 
@@ -43,18 +44,22 @@
 					<!-- autocomplete="off"  -->
 		</div>
 
-		<span   class="alert" 
+<!-- 		<span   class="alert" 
 				*ngIf="password.invalid && password.touched">
 				Please enter password!
-				</span>
+				</span> -->
 
 
 								<!-- btn-block -->
 		<button class="btn btn-primary" 
-				[disabled]="f.invalid" 
 				type="submit">
 				Login
 				</button>
+							<!-- [disabled]="f.invalid" -->
+			<div>
+				<h2>{{outputUsername}}</h2>
+				<h2>{{outputPassword}}</h2>
+			</div>
 
 		<button class="btn btn-success" 
 				routerLink="/register">
